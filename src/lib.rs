@@ -40,7 +40,7 @@ pub mod devices {
 }
 
 pub struct Ws2812<SPI, DEVICE = devices::Ws2812> {
-    spi: SPI,
+    pub spi: SPI,
     device: PhantomData<DEVICE>,
 }
 
